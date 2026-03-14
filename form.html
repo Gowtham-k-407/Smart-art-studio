@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.5">
+<title>Smart Art Studios - Bookings</title>
+<link rel="icon" href="icon.svg">
+
+<style>
+
+body{
+background:rgb(41,6,40);
+margin:0;
+font-family:monospace;
+display:flex;
+flex-direction:column;
+}
+
+
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+
+
+.nav{
+display:flex;
+gap:15px;
+justify-content:center;
+font-size:25px;
+font-weight:bold;
+margin-bottom:25px;
+}
+
+.hom,.wok,.con{
+color:aqua;
+text-decoration:none;
+}
+
+.hom:hover,.wok:hover,.con:hover{
+box-shadow:5px 5px 10px rgba(0,0,0,0.7);
+background-color:rgba(76,155,219,0.232);
+border-radius:5px;
+padding:5px;
+color:silver;
+transition:0.15s;
+}
+
+.hom:hover::before{content:url('home.svg');}
+.wok:hover::before{content:url('work.svg');}
+.con:hover::before{content:url('contact.svg');}
+
+a{cursor:pointer;}
+
+
+
+.cn{
+text-align:center;
+margin-bottom:30px;
+}
+
+.cn h1{
+background:linear-gradient(90deg,#FFFFFF,#00F5D4);
+-webkit-background-clip:text;
+background-clip:text;
+-webkit-text-fill-color:transparent;
+font-size:3rem;
+text-shadow:
+0 0 7px rgba(255,255,255,0.3),
+0 0 10px rgba(255,255,255,0.2),
+0 0 21px rgba(225,213,231,0.1);
+}
+
+
+.book{
+color:silver;
+font-size:35px;
+margin-bottom:20px;
+}
+
+
+.ifra{
+width:fit-content;
+height:fit-content;
+border-radius:15px;
+border:1px solid #00F5D4;
+box-shadow:
+0 0 10px rgba(0,245,212,0.4),
+0 0 30px rgba(0,245,212,0.2);
+overflow:hidden;
+}
+
+
+.ifra iframe{
+width:300px;
+height:420px;
+border:none;
+display:block;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="nav">
+<a href="home.html" class="hom">Home</a>
+<a href="works.html" class="wok">Works</a>
+<a href="contact.html" class="con">Contact</a>
+</div>
+
+<div class="cn">
+<h1>Smart Art Studios</h1>
+</div>
+
+<h1 class="book">Bookings</h1>
+
+<div class="ifra">
+<iframe
+src="https://docs.google.com/forms/d/e/1FAIpQLSex8-abcneSturfRQ6iJfF1ZviLcpWZVxDsmC1Wjn1NHpmOJg/viewform?embedded=true">
+Loading…
+</iframe>
+</div>
+
+</div>
+
+</body>
+</html>

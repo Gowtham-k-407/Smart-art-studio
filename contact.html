@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.5">
+<title>Smart Art Studios - Portfolio</title>
+<link rel="icon" href="icon.svg">
+
+<style>
+
+body{
+background:rgb(41,6,40);
+display:flex;
+flex-direction:column;
+margin:0;
+font-family:monospace;
+}
+
+.container{
+margin:auto;
+padding:25px;
+text-align:center;
+}
+
+
+
+.nav{
+gap:10px;
+font-size:25px;
+font-weight:bold;
+}
+
+.hom,.wok{
+color:aqua;
+text-decoration:none;
+}
+
+.hom:hover,.wok:hover,.con:hover{
+background-color:rgba(76,155,219,0.232);
+box-shadow:5px 5px 10px rgba(0,0,0,0.7);
+border-radius:5px;
+padding:5px;
+color:silver;
+transition:0.15s;
+}
+
+.hom:hover::before{content:url('home.svg');}
+.wok:hover::before{content:url('work.svg');}
+
+.con::before{content:url('contact.svg');}
+
+.con{
+background-color:rgba(76,155,219,0.232);
+box-shadow:5px 5px 10px rgba(0,0,0,0.7);
+border-radius:5px;
+padding:5px;
+color:silver;
+}
+
+
+
+.concard{
+display:flex;
+flex-direction:column;
+text-align:left;
+margin-top:25px;
+color:silver;
+font-family:'Courier New', Courier, monospace;
+border-radius:15px;
+font-size:25px;
+padding:25px 50px;
+background:linear-gradient(135deg,#2C072B 0%,#1A1A40 45%,#041c5f 100%);
+border:1px solid #00F5D4;
+box-shadow:
+0 0 10px rgba(0,245,212,0.4),
+0 0 30px rgba(0,245,212,0.2);
+}
+
+
+
+.ph,.email,.instagram{
+margin-top:25px;
+transition:0.15s;
+}
+
+.ph:hover,.email:hover,.instagram:hover{
+transform:scale(1.05);
+box-shadow:
+0 0 10px rgba(0,245,212,0.4),
+0 0 30px rgba(0,245,212,0.2);
+background:rgba(0,245,212,0.02);
+padding:5px;
+border-radius:10px;
+}
+
+
+
+.instagram td{
+white-space:nowrap;
+}
+
+.ins{
+text-decoration:none;
+color:silver;
+font-size:25px;
+display:inline-block;
+white-space:nowrap;
+padding:5px 10px;
+transition:transform 0.15s, box-shadow 0.15s;
+}
+
+.ins:hover{
+transform:scale(1.08);
+box-shadow:
+0 0 10px rgba(0,245,212,0.4),
+0 0 30px rgba(0,245,212,0.2);
+background:linear-gradient(135deg,#2C072B 0%,#1A1A40 45%,#041c5f 100%);
+border-radius:15px;
+}
+
+
+
+.form{
+display:flex;
+flex-direction:column;
+align-items:flex-start;
+margin-top:25px;
+color:silver;
+font-family:'Courier New', Courier, monospace;
+font-size:25px;
+padding:25px 50px;
+border-radius:15px;
+background:linear-gradient(135deg,#2C072B 0%,#1A1A40 45%,#041c5f 100%);
+border:1px solid #00F5D4;
+box-shadow:
+0 0 10px rgba(0,245,212,0.4),
+0 0 30px rgba(0,245,212,0.2);
+}
+
+
+
+.clic-btn{
+margin-top:10px;
+}
+
+.click{
+text-decoration:none;
+color:silver;
+font-size:20px;
+display:inline-block;
+white-space:nowrap;
+padding:10px 15px;
+transition:transform 0.15s, box-shadow 0.15s;
+}
+
+.click:hover{
+transform:scale(1.08);
+box-shadow:
+0 0 10px rgba(0,245,212,0.4),
+0 0 30px rgba(0,245,212,0.2);
+background:linear-gradient(135deg,#29578c 0%,#222267 45%,#163076 100%);
+border-radius:15px;
+}
+
+a{
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="nav">
+<a href="home.html" class="hom">Home</a>
+<a href="works.html" class="wok">Works</a>
+<a class="con">Contact</a>
+</div>
+
+<div class="concard">
+
+<div class="ph">
+Contact No:&nbsp;
++91 9566515103<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+91 8148796055
+</div>
+
+<div class="email">
+Email:&nbsp;
+gowthamk81487@gmail.com<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mohammedpeerrahumanoffical@gmail.com
+</div>
+
+<div class="instagram">
+
+<table>
+
+<tr>
+<td>Instagram:&nbsp;
+<a href="https://www.instagram.com/_rahuman_28" class="ins">View here!</a>
+</td>
+</tr>
+
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.instagram.com/itz_me_k_gowtham_07" class="ins">View here!</a>
+</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<div class="form">
+
+<p>To get a brochure & other details:</p>
+
+<div class="clic-btn">
+<a href="form.html" class="click">Click here!</a>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

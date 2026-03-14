@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.5">
+<title>Smart Art Studios - Portfolio</title>
+<link rel="icon" href="icon.svg">
+
+<style>
+
+body{
+    background:rgb(41, 6, 40);
+    display:flex;
+    flex-direction:column;
+}
+
+.container{
+    padding:40px;
+}
+
+.cot{
+    display:flex;
+    gap:30px;
+    justify-content:flex-start; 
+    align-items:stretch;
+}
+
+
+.what,
+.credits{
+    flex:0 0 420px;
+}
+
+
+.nav{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    font-family:monospace;
+    font-size:25px;
+    font-weight:bold;
+}
+
+.wok,.con{
+    color:aqua;
+    text-decoration:none;
+}
+
+.wok:hover,.con:hover{
+    box-shadow:5px 5px 10px rgba(0,0,0,0.7);
+    background-color:rgba(76,155,219,0.232);
+    width:150px;
+    border-radius:5px;
+    padding:5px;
+    color:silver;
+    transition:0.15s;
+}
+
+.wok:hover::before{content:url('work.svg');}
+.con:hover::before{content:url('contact.svg');}
+
+.hom{
+    color:silver;
+    box-shadow:5px 5px 10px rgba(0,0,0,0.7);
+    background-color:rgba(76,155,219,0.232);
+    width:150px;
+    border-radius:5px;
+    padding:5px;
+}
+
+.hom::before{content:url('home.svg');}
+
+a{cursor:pointer;}
+
+h1{
+background:linear-gradient(90deg,#FFFFFF,#00F5D4);
+-webkit-background-clip:text;
+background-clip:text;
+-webkit-text-fill-color:transparent;
+font-weight:bold;
+font-size:3rem;
+text-align:center;
+text-shadow:
+0 0 7px rgba(255,255,255,0.3),
+0 0 10px rgba(255,255,255,0.2),
+0 0 21px rgba(225,213,231,0.1);
+}
+
+.comnam{
+display:flex;
+justify-content:center;
+align-items:center;
+margin-top:15px;
+font-family:'Courier New', Courier, monospace;
+font-weight:bold;
+font-size:25px;
+}
+
+.txt{
+font-family:'Courier New', Courier, monospace;
+background:linear-gradient(90deg,#FFFFFF,#00F5D4);
+-webkit-background-clip:text;
+background-clip:text;
+-webkit-text-fill-color:transparent;
+font-weight:bold;
+font-size:45px;
+text-shadow:
+0 0 7px rgba(255,255,255,0.3),
+0 0 10px rgba(255,255,255,0.2),
+0 0 21px rgba(225,213,231,0.1);
+}
+
+
+.point1{
+padding:5px 15px;
+border-radius:15px;
+font-size:18px;
+font-family:'Courier New', Courier, monospace;
+background:linear-gradient(135deg,#2C072B 0%,#1A1A40 45%,#041c5f 100%);
+border:1px solid #00F5D4;
+box-shadow:0 0 10px rgba(0,245,212,0.4),0 0 30px rgba(0,245,212,0.2);
+}
+
+.point2,.point3,.point4,.point5,.Founder{
+margin-top:15px;
+padding:5px 15px;
+border-radius:15px;
+font-size:18px;
+font-family:'Courier New', Courier, monospace;
+background:linear-gradient(135deg,#2C072B 0%,#1A1A40 45%,#041c5f 100%);
+border:1px solid #00F5D4;
+box-shadow:0 0 10px rgba(0,245,212,0.4),0 0 30px rgba(0,245,212,0.2);
+}
+
+
+.what{
+display:flex;
+flex-direction:column;
+padding:45px;
+border-radius:15px;
+background:linear-gradient(135deg,#2C072B 0%,#1A1A40 45%,#041c5f 100%);
+border:1px solid #00F5D4;
+box-shadow:0 0 10px rgba(0,245,212,0.4),0 0 30px rgba(0,245,212,0.2);
+}
+
+.credits{
+padding:45px;
+border-radius:15px;
+background:linear-gradient(135deg,#2C072B 0%,#1A1A40 45%,#041c5f 100%);
+border:1px solid #00F5D4;
+box-shadow:0 0 10px rgba(0,245,212,0.4),0 0 30px rgba(0,245,212,0.2);
+}
+
+
+.txt:hover,
+.point1:hover,
+.point2:hover,
+.point3:hover,
+.point4:hover,
+.point5:hover,
+.Founder:hover{
+background:linear-gradient(90deg,#FFFFFF,#00F5D4);
+-webkit-background-clip:text;
+background-clip:text;
+-webkit-text-fill-color:transparent;
+transform:scale(1.05);
+transition:0.15s;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="nav">
+<a class="hom">Home</a>
+<a href="works.html" class="wok">Works</a>
+<a href="contact.html" class="con">Contact</a>
+</div>
+
+<div class="comnam">
+<h1>Smart art studios</h1>
+</div>
+
+<div class="cot">
+
+<div class="what">
+
+<h2 class="txt">What we do?</h2>
+
+<div class="point1">
+<p style="color:silver;">We convert boring videos into digital gold</p>
+</div>
+
+<div class="point2">
+<p style="color:silver;">Turning Static Frames into Strategic Gains</p>
+</div>
+
+<div class="point3">
+<p style="color:silver;">Boring to Bold. Raw to Gold</p>
+</div>
+
+<div class="point4">
+<p style="color:silver;">Where Creative Vision Meets Digital Precision</p>
+</div>
+
+<div class="point5">
+<p style="color:silver;">Maximize Your Reach. Master Your Aesthetic</p>
+</div>
+
+</div>
+
+<div class="credits">
+
+<h2 class="txt">OUR TEAM</h2>
+
+<div class="Founder" style="padding: 5px;">
+<p style="color:silver;">Our Founder: Mohammed Peer Raguman T</p>
+</div>
+
+<div class="Founder">
+<p style="color:silver;">OUR CEO: GOWTHAM K</p>
+</div>
+
+<p style="color:silver; margin-top:15px;">OUR EDITORS:</p>
+
+<div class="Founder">
+<p style="color:silver;">Mohammed Peer Raguman T</p>
+</div>
+
+<div class="Founder">
+<p style="color:silver;">RATISH</p>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</body>
+</html>

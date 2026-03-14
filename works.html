@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.5">
+<title>Smart Art Studios - Works</title>
+<link rel="icon" href="icon.svg">
+
+<style>
+
+body{
+background:rgb(41,6,40);
+display:flex;
+margin:0;
+font-family:monospace;
+}
+
+
+
+.container{
+margin:auto;
+text-align:center;
+padding:40px;
+}
+
+
+
+.nav{
+display:flex;
+justify-content:center;
+gap:15px;
+font-size:25px;
+font-weight:bold;
+margin-bottom:40px;
+}
+
+.hom,.con{
+color:aqua;
+text-decoration:none;
+}
+
+.hom:hover,.con:hover{
+box-shadow:5px 5px 10px rgba(0,0,0,0.7);
+background-color:rgba(76,155,219,0.232);
+border-radius:5px;
+padding:5px;
+color:silver;
+transition:0.15s;
+}
+
+.hom:hover::before{content:url('home.svg');}
+.con:hover::before{content:url('contact.svg');}
+
+
+
+.wok{
+box-shadow:5px 5px 10px rgba(0,0,0,0.7);
+background-color:rgba(76,155,219,0.232);
+border-radius:5px;
+padding:5px;
+color:silver;
+text-decoration:none;
+}
+
+.wok::before{
+content:url('work.svg');
+}
+
+
+
+.title{
+margin-top:40px;
+}
+
+.title h1{
+background:linear-gradient(90deg,#FFFFFF,#00F5D4);
+-webkit-background-clip:text;
+background-clip:text;
+-webkit-text-fill-color:transparent;
+font-size:3rem;
+text-shadow:
+0 0 7px rgba(255,255,255,0.3),
+0 0 10px rgba(255,255,255,0.2),
+0 0 21px rgba(225,213,231,0.1);
+}
+
+
+
+.works{
+display:flex;
+gap:30px;
+margin-top:40px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+
+
+.card{
+width:280px;
+padding:25px;
+border-radius:15px;
+background:linear-gradient(135deg,#2C072B 0%,#1A1A40 45%,#041c5f 100%);
+border:1px solid #00F5D4;
+box-shadow:
+0 0 10px rgba(0,245,212,0.4),
+0 0 30px rgba(0,245,212,0.2);
+color:silver;
+transition:0.2s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="nav">
+<a href="home.html" class="hom">Home</a>
+<a class="wok">Works</a>
+<a href="contact.html" class="con">Contact</a>
+</div>
+
+<div class="title">
+<h1>Our Works</h1>
+</div>
+
+<div class="works">
+
+<div class="card">
+<h3>YouTube Editing</h3>
+<p>High retention editing optimized for YouTube growth.</p>
+</div>
+
+<div class="card">
+<h3>Reels Editing</h3>
+<p>Short-form content designed for maximum engagement.</p>
+</div>
+
+<div class="card">
+<h3>Thumbnail Design</h3>
+<p>High CTR thumbnails built using color psychology.</p>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
